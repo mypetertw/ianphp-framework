@@ -1,0 +1,58 @@
+div.tagsinput {
+    width: 100%;
+    outline: none;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    /* padding: 10px 0px; */
+    margin: 0px 0;
+    border: 0;
+    border-bottom: 1px #eee solid;
+    -webkit-font-smoothing: antialiased;
+    overflow-y: auto;
+}
+
+div.tagsinput:hover,
+div.tagsinput:focus {
+    border-bottom: 1px #177ce9 solid;
+}
+
+div.tagsinput span.tag {
+    background-color: #f8f8f8;
+    border-radius: 50px;
+    border: 1px solid #f8f8f8;
+    display: block;
+    float: left;
+    padding: 8px 20px;
+    color: #000;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 13.9px;
+}
+
+.tagsinput .tag span {
+    font-weight: 500;
+}
+
+div.tagsinput span.tag a {
+    font-weight: 800;
+    color: red;
+    font-size: 16px;
+}
+
+div.tagsinput input {
+    width: 100px;
+    margin: 0px;
+    font-family: helvetica;
+    font-size: 13.9px;
+    border: 1px solid transparent;
+    padding: 10px 0px;
+    background: transparent;
+    color: #fff;
+    outline: 0px;
+    margin-top: 10px;
+}
+
+div.tagsinput div {
+    display: block;
+    float: left;
+}

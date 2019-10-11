@@ -1,0 +1,65 @@
+/* <div class="airbnb-loading">
+  <div class="_1phz5ou8 airbnb-style"></div>
+  <div class="_1o2dvxx9 airbnb-style"></div>
+  <div class="_hcshjni airbnb-style"></div>
+</div> */
+
+.airbnb-loading {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.airbnb-style {
+    border-radius: 100%;
+	display: inline-block;
+	-webkit-animation-name: airbnb;
+	animation-name: airbnb;
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	vertical-align: middle;
+	width: 12px;
+	height: 12px;
+}
+
+._1phz5ou8 {
+	margin-right: 8px;
+	background: #000;
+	-webkit-animation-delay: -0.3s;
+	animation-delay: -0.3s;
+}
+._1o2dvxx9 {
+	margin-right: 8px;
+    background: #000;
+	-webkit-animation-delay: -0.15s;
+	animation-delay: -0.15s;
+}
+._hcshjni {
+	width: 12px;
+	height: 12px;
+	background: #000;
+}
+
+@-webkit-keyframes airbnb {
+    0%, 80%, 100% { opacity: 0; }
+    30%, 50% { opacity: 1; }
+}
+@keyframes airbnb {
+    0%, 80%, 100% { opacity: 0; }
+    30%, 50% { opacity: 1; }
+}

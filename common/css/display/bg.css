@@ -1,0 +1,18 @@
+.bg-transparent {
+    background: transparent;
+}
+.bg-white {
+    background: #fff;
+}
+.bg-black {
+    background: #000;
+}
+.bg-red {
+    background: #D13434;
+}
+.bg-green {
+    background: #7ED321;
+}
+.bg-gray {
+    background: #9b9b9b;
+}

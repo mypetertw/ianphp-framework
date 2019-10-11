@@ -1,0 +1,45 @@
+.circle {
+    width: 80px;
+    height: 80px;
+}
+
+.circle svg {
+    fill: none;
+    stroke: #ff80a2;
+    stroke-linecap: round;
+    stroke-width: 3;
+    /* stroke-dasharray: 8; */
+    /* stroke-dashoffset: 0; */
+    animation: stroke-draw 5s ease-in-out;
+    -webkit-animation: stroke-draw 5s ease-in-out;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes stroke-draw {
+    from {
+        stroke: #8a3ab8;
+        stroke-dasharray: 8;
+    }
+
+    to {
+        stroke: #ff80a2;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        stroke-dasharray: 8;
+    }
+}
+
+@keyframes stroke-draw {
+    from {
+        stroke: #8a3ab8;
+        stroke-dasharray: 8;
+    }
+
+    to {
+        stroke: #ff80a2;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        stroke-dasharray: 8;
+    }
+}

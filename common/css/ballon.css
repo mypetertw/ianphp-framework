@@ -1,0 +1,92 @@
+.ballon {
+    -webkit-animation: ballon 12s 1 alternate;
+    animation: ballon 12s 1 alternate;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.bounce-right {
+    -webkit-animation: bounceRight 3s infinite;
+    animation: bounceRight 3s infinite;
+}
+
+.bounce-left {
+    -webkit-animation: bounceLeft 3s infinite;
+    animation: bounceLeft 3s infinite;
+}
+
+@-webkit-keyframes ballon {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes ballon {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@-webkit-keyframes bounceRight {
+    0% {
+        transform: translateY(0)
+    }
+    15% {
+        transform: translateX(15px)
+    }
+    30% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+@keyframes bounceRight {
+    0% {
+        transform: translateY(0)
+    }
+    15% {
+        transform: translateX(15px)
+    }
+    30% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@-webkit-keyframes bounceLeft {
+    0% {
+        transform: translateY(0)
+    }
+    15% {
+        transform: translateX(-15px)
+    }
+    30% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+@keyframes bounceLeft {
+    0% {
+        transform: translateY(0)
+    }
+    15% {
+        transform: translateX(-15px)
+    }
+    30% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}

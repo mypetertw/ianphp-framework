@@ -1,0 +1,20 @@
+.translate-without {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+}
+.translate-middle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.translate-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+}

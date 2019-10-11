@@ -1,0 +1,85 @@
+.social-contact-content {
+    position: fixed;
+    right: 25px;
+    bottom: 145px;
+    z-index: 99;
+    width: 60px;
+}
+.social-contact-line-btn {
+    background: transparent;
+}
+.social-contact-line-btn img {
+    height: 60px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.06), 0 2px 32px rgba(0,0,0,.16);
+    -webkit-transition: box-shadow .2s ease;
+    border-radius: 36px;
+}
+.social-contact-facebook-btn {
+    border: 0;
+    width: 60px;
+    height: 60px;
+    background: #0084ff;
+    box-shadow: 0 1px 6px rgba(0,0,0,.06), 0 2px 32px rgba(0,0,0,.16);
+    border-radius: 50%;
+}
+.social-contact-facebook-btn img {
+    height: 35px;
+    vertical-align: middle;
+}
+.social-contact-email-btn {
+    border: 0;
+    width: 60px;
+    height: 60px;
+    background: #333;
+    box-shadow: 0 1px 6px rgba(0,0,0,.06), 0 2px 32px rgba(0,0,0,.16);
+    border-radius: 50%;
+}
+.social-contact-email-btn img {
+    height: 35px;
+    vertical-align: middle;
+}
+.social-contact-phone-btn {
+    border: 0;
+    width: 60px;
+    height: 60px;
+    background: #ec5923;
+    box-shadow: 0 1px 6px rgba(0,0,0,.06), 0 2px 32px rgba(0,0,0,.16);
+    border-radius: 50%;
+}
+.social-contact-phone-btn img {
+    height: 35px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .social-contact-content {
+        width: 45px;
+        right: 20px;
+    }
+    .social-contact-line-btn img {
+        height: 45px;
+    }
+    .social-contact-facebook-btn {
+        width: 45px;
+        height: 45px;
+    }
+    .social-contact-facebook-btn img {
+        height: 28px;
+    }
+    .social-contact-email-btn {
+        width: 45px;
+        height: 45px;
+    }
+    .social-contact-email-btn img {
+        height: 28px;
+        vertical-align: middle;
+    }
+    .social-contact-phone-btn {
+        width: 45px;
+        height: 45px;
+    }
+    .social-contact-phone-btn img {
+        height: 28px;
+    }
+}

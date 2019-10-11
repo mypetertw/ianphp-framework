@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:200,400,500,500i,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "PingFang TC", "Noto Sans TC", "微軟正黑體", Ubuntu, sans-serif;
+    height: 100%;
+    color: #000;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+img, button, select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-appearance: none;
+}
+
+select, input, button {
+    font-family: "PingFang TC", "Noto Sans TC", "微軟正黑體", Ubuntu, sans-serif;
+}
+
+input, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button, input, select, textarea {
+    outline: none;
+}
+
+button, select {
+    cursor: pointer;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+::selection {
+    color: #ffffff;
+    background: #cc1414;
+}
+
+::-moz-selection {
+    color: #ffffff;
+    background: #cc1414;
+}
+
+::-webkit-selection {
+    color: #ffffff;
+    background: #cc1414;
+}
+
+::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+:-moz-placeholder {
+    color: #ccc;
+}
+
+::-moz-placeholder {
+    color: #ccc;
+}
+
+:-ms-input-placeholder {
+    color: #ccc;
+}
+
+*::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+*:-moz-placeholder {
+    color: #ccc;
+}
+
+*:-ms-input-placeholder {
+    color: #ccc;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #ccc;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #ccc;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #ccc;
+}
+
+div {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 1023px) {
+    input {
+        /* border-radius: 0; */
+    }
+
+    button {
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,40 @@
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,.056);
+    z-index: 100;
+    height: 70px;
+}
+.header-content {
+    /* width: 1000px; */
+    /* width: 100%; */
+    height: 70px;
+    margin: 0 20px;
+}
+.header-content img {
+    width: 30px;
+}
+.header-menu {
+    right: 0;
+}
+.section-btn {
+    font-size: 13px;
+    margin-left: 20px;
+    color: #000;
+}
+.section-btn:hover {
+    opacity: .666;
+}
+.section-btn.active {
+    font-size: 13px;
+    margin-left: 20px;
+    color: #000;
+    border-bottom: 2px #000 solid;
+}
+
+@media screen and (max-width: 1023px) {
+
+}

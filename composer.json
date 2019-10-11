@@ -1,0 +1,14 @@
+{
+    "name": "ian/quickper",
+    "authors": [
+        {
+            "name": "Ian",
+            "email": "mypetertw@gmail.com"
+        }
+    ],
+    "require": {
+        "twilio/sdk": "^5.33",
+        "facebook/graph-sdk": "^5.7",
+        "rosell-dk/webp-convert": "^2.1"
+    }
+}

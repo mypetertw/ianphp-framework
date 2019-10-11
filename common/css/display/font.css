@@ -1,0 +1,132 @@
+.spacing-5 {
+    letter-spacing: 5px;
+}
+
+.spacing-3 {
+    letter-spacing: 3px;
+}
+
+.spacing-2 {
+    letter-spacing: 2px;
+}
+
+.spacing-1 {
+    letter-spacing: 1px;
+}
+
+.font-11 {
+    font-size: 11px;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-13 {
+    font-size: 13px;
+}
+
+.font-14 {
+    font-size: 13.9px;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-17 {
+    font-size: 17px;
+}
+
+.font-18 {
+    font-size: 17.9px;
+}
+
+.font-19 {
+    font-size: 19px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-22 {
+    font-size: 22px;
+}
+
+.font-30 {
+    font-size: 30px;
+}
+
+.font-36 {
+    font-size: 36px;
+}
+
+.font-46 {
+    font-size: 46px;
+}
+
+.font-60 {
+    font-size: 60px;
+}
+
+.weight-200 {
+    font-weight: 200;
+}
+
+.weight-400 {
+    font-weight: 400;
+}
+
+.weight-500 {
+    font-weight: 500;
+}
+
+.weight-800 {
+    font-weight: 800;
+}
+
+.green {
+    color: #7ED321;
+}
+
+.orange {
+    color: #F5A623;
+}
+
+.black-48 {
+    color: #484848;
+}
+
+.black-4a {
+    color: #4a4a4a;
+}
+
+.black {
+    color: #000;
+}
+
+.white {
+    color: #fff;
+}
+
+.gray {
+    color: #9b9b9b;
+}
+
+.blue {
+    color: #177ce9;
+}
+
+.ccc {
+    color: #ccc;
+}
+
+.red {
+    color: #D0021B;
+    /* F53993 */
+}

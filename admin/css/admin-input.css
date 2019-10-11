@@ -1,0 +1,95 @@
+/*
+| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
+*/
+.signin-input {
+    background: #fff;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px #eee solid;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.signin-input:hover,
+.signin-input:focus {
+    border-bottom: 1px #000 solid;
+}
+
+.header-search-box {
+    background: #F6F5F5;
+    border-radius: 30px;
+    font-size: 13.9px;
+    width: 320px;
+    border: 0;
+    padding: 11px 30px;
+}
+
+.filter-select-general {
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+    /* border-bottom: 1px #eee solid; */
+    outline: none;
+    font-size: 15px;
+    background: url('/images/down.png') no-repeat 98% center;
+    background-size: 8px;
+    font-size: 13.9px;
+    cursor: pointer;
+}
+
+.select-general {
+    padding: 11px 0;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px #eee solid;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    background: url('/images/down.png') no-repeat 98% center;
+    background-size: 10px;
+    font-size: 13.9px;
+    cursor: pointer;
+}
+
+.select-general-without-down-icon {
+    padding: 11px 0;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px #eee solid;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    font-size: 13.9px;
+    cursor: pointer;
+}
+
+.general-input {
+    padding: 11px;
+    border-radius: 5px;
+    border: 1px #eee solid;
+    background: #fff;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+}
+
+.underline-input {
+    padding: 11px 0;
+    border-radius: 0;
+    border: 0;
+    background: #fff;
+    border-bottom: 1px #eee solid;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+}
+
+.general-input:focus,
+.general-input:hover {
+    border: 1px #000 solid;
+}
+
+.underline-input:focus,
+.underline-input:hover {
+    border-bottom: 1px #000 solid;
+}

@@ -1,0 +1,46 @@
+{
+  "name": "@editorjs/personality",
+  "version": "2.0.1",
+  "description": "Personality tool for Editor.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/editor-js/personality.git"
+  },
+  "author": {
+    "name": "CodeX",
+    "email": "team@codex.so"
+  },
+  "main": "./dist/bundle.js",
+  "keywords": [
+    "redactor",
+    "codex editor",
+    "personality",
+    "tool",
+    "editor.js",
+    "editorjs"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/editor-js/personality/issues"
+  },
+  "homepage": "https://github.com/editor-js/personality#readme",
+  "devDependencies": {
+    "@codexteam/ajax": "^4.0.1",
+    "css-loader": "^3.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-codex": "github:codex-team/eslint-config",
+    "eslint-loader": "^2.2.1",
+    "file-loader": "^4.1.0",
+    "formidable": "^1.2.1",
+    "postcss-nested": "^4.1.2",
+    "request": "^2.88.0",
+    "style-loader": "^0.23.1",
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}

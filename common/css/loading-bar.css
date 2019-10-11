@@ -1,0 +1,63 @@
+.progress {
+    display: block;
+    text-align: center;
+    width: 0;
+    height: 3px;
+    background: #000;
+    transition: width .3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 210;
+}
+
+.progress.hide {
+    opacity: 0;
+    transition: opacity 1.3s;
+}
+
+.loading-bar,
+.loading-spinner {
+    display: block;
+    position: fixed;
+    z-index: 200;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.loading-bar.hide,
+.loading-spinner.hide {
+    opacity: 0;
+    z-index: 0;
+    visibility: hidden;
+}
+
+.loading-bar.in,
+.loading-spinner.in {
+    z-index: 200;
+    opacity: 1;
+    visibility: visible;
+}
+
+.loading-bar {
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: #000;
+    width: 0%;
+    -webkit-transition: width .25s linear;
+    transition: width .25s linear;
+}
+
+.loading-bar:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 70px;
+    right: 0;
+    top: 0;
+    height: 2px;
+    opacity: .45;
+    box-shadow: #29d 1px 0 6px 1px;
+    border-radius: 100%;
+}
