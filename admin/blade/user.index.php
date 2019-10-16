@@ -1,16 +1,10 @@
 <?
 /*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-| IF DATA IS EMPTY
+| NOTE: IF DATA IS EMPTY
 */
 if (sizeof(User\Get::LIST(false)) === 0) {
     echo Helper\Layout::EMPTY_DATA('目前無更多使用者');
-} else {
-/*
-| NOTE: DISPLAY DATA BELOW
-| CUSTOM BLADE START
-*/
-?>
+} else { ?>
 
     <? foreach (User\Get::LIST(true) as $key): ?>
         <div class="list-layout relative control-evt" data-id="<?=$key['id'];?>">

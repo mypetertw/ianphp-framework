@@ -1,16 +1,10 @@
 <?
 /*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-| IF DATA IS EMPTY
+| NOTE: IF DATA IS EMPTY
 */
 if (sizeof(Manager\Get::LIST(false)) === 0) {
     echo Helper\Layout::EMPTY_DATA('目前無更多管理員');
-} else {
-/*
-| NOTE: DISPLAY DATA BELOW
-| CUSTOM BLADE START
-*/
-?>
+} else { ?>
 
     <? foreach (Manager\Get::LIST(true) as $key): ?>
         <div class="list-layout relative control-evt" data-id="<?=$key['id'];?>">
