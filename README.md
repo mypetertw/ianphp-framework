@@ -1,1 +1,1 @@
-IANPHP - Framework v1.35 / Author: BIC Team / Email: Ian, mypetertw@gmail.com
+IANPHP - Framework v1.35 (PHP ^7.3) / Author: Ian at BIC Team in Taipei / Email: Ian, mypetertw@gmail.com
