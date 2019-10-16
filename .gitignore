@@ -1,5 +1,5 @@
 *.DS_Store
-local-config.json
+#local-config.json
 
 ###### CUSTOM BELOW ######
 images/setting/*
