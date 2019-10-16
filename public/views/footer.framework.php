@@ -1,8 +1,4 @@
 <?
-/*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-| JS AUTOLOAD
-*/
 foreach (glob(ROOT . '/public/js/*.js') as $key) {
     echo Helper\Js::REQUIRE('public/js/'.basename($key));
 }
@@ -17,6 +13,6 @@ foreach (glob(ROOT . '/public/handlers/*.js') as $key) {
 require_once ROOT . '/public/views/footer.php';
 
 /*
-| NOTE: ENDBODY TAG
+| NOTE: END BODY TAG
 */
 echo BODY_END;
