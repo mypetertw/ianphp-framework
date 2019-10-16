@@ -1,7 +1,7 @@
 #gotop {
     display: none;
     position: fixed;
-    right: 30px;
+    right: 24px;
     bottom: 20px;
     padding: 11px 15px;
     border-radius: 50%;
@@ -12,7 +12,6 @@
 }
 
 @media screen and (max-width: 1023px) {
-
     #gotop {
         padding: 6px 10px;
     }
