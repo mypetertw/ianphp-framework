@@ -51,6 +51,8 @@ button {
         <input name="DEV_HOST" placeholder="開發環境域名（通常是 127.0.0.1）" value="<?=$_SERVER['HTTP_HOST'];?>" required><br>
         正式環境域名（不會是 127.0.0.1）
         <input name="PROD_HOST" placeholder="正式環境域名（不會是 127.0.0.1）" value="xxx.rockbearshop.com" required><br>
+        SLACK WEBHOOK
+        <input name="SLACK_WEBHOOK" placeholder="SLACK WEBHOOK" value="https://hooks.slack.com/services/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">
         <br>
         <br>
         <button type="submit">建立 local-config.json 設定檔</button>

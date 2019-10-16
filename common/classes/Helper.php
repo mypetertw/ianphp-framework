@@ -101,7 +101,7 @@ class Format {
 class Slack {
 
   public function SEND_MESSAGE($STRING, $HANDLER, $FILE, $CHANNEL) {
-    GLOBAL $SYSTEM_VARIABLE;
+    GLOBAL $LOCAL_CONFIG;
 
     $payload = [
       'text' => $STRING,
@@ -126,7 +126,7 @@ class Slack {
         ]
       ]
     ];
-    $ch = curl_init($SYSTEM_VARIABLE['SLACK_API']);
+    $ch = curl_init($LOCAL_CONFIG['SLACK_WEBHOOK']);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));

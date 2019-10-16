@@ -68,7 +68,7 @@ switch (HANDLER) {
                 ]
             ]
         ];
-        $ch = curl_init($SYSTEM_VARIABLE['SLACK_API']);
+        $ch = curl_init($LOCAL_CONFIG['SLACK_WEBHOOK']);
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($JSON));
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));

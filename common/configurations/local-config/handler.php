@@ -11,7 +11,8 @@ $JSON = [
     'DB_PASSWORD' => $_POST['DB_PASSWORD'],
     'DB_NAME' => $_POST['DB_NAME'],
     'DEV_HOST' => $_POST['DEV_HOST'],
-    'PROD_HOST' => $_POST['PROD_HOST']
+    'PROD_HOST' => $_POST['PROD_HOST'],
+    'SLACK_WEBHOOK' => $_POST['SLACK_WEBHOOK']
 ];
 fwrite($CREATE, json_encode($JSON));
 fclose($CREATE);

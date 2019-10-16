@@ -18,6 +18,5 @@ $SYSTEM_VARIABLE = [
     'HOST_URL' => $HOST_URL .'/',
     'HOST_URL_NO_SLASH' => $HOST_URL,
     'UPLOAD_ROOT_DIR' => __DIR__ . '/../../',
-    'SLACK_API' => 'https://hooks.slack.com/services/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',
     'VIEWS_MENU' => ROOT . '/admin/views/menu.php',
 ];
