@@ -1,7 +1,4 @@
 <?
-/*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-*/
 require_once __DIR__ . '/../../root.php';
 require_once ROOT . '/common/backend.php';
 
