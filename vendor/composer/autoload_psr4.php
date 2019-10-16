@@ -6,8 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'WebPConvert\\' => array($vendorDir . '/rosell-dk/webp-convert/src'),
     'Twilio\\' => array($vendorDir . '/twilio/sdk/Twilio'),
-    'ImageMimeTypeGuesser\\' => array($vendorDir . '/rosell-dk/image-mime-type-guesser/src'),
     'Facebook\\' => array($vendorDir . '/facebook/graph-sdk/src/Facebook'),
 );
