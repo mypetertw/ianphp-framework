@@ -1,7 +1,10 @@
+# BASIC
+
 *.DS_Store
 #local-config.json
 pull.php
 pullc.php
 
-###### CUSTOM BELOW ######
+# CUSTOM BELOW
+
 images/setting/*

@@ -1,5 +1,4 @@
 <IfModule mod_rewrite.c>
-    ###### IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT ######
     <IfModule mod_negotiation.c>
         Options -Indexes
         Options +FollowSymlinks
@@ -7,6 +6,7 @@
 
     RewriteEngine on
 
+    # BASIC
     RewriteRule ^$ public/templates/index.php
     RewriteRule ^admin/$ admin/templates/index.php
     RewriteRule ^common/configurations/local-config/([\w\-]+)$ common/configurations/local-config/$1.php [L]
@@ -19,8 +19,7 @@
     RewriteRule ^admin/([\w\-]+)$ admin/$1.php [L]
     RewriteRule ^([\w\-]+)/([\w\-]+)$ public/templates/$1/$2.php [L]
     RewriteRule ^admin/([\w\-]+)/([\w\-]+)$ admin/templates/$1/$2.php [L]
-    ###### IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT ######
 
-    ###### CUSTOM BELOW ######
+    # CUSTOM BELOW
 
 </IfModule>
