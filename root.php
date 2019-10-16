@@ -1,6 +1,6 @@
 <?php
 /*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
+| NOTE: ROOT DIRPATH
 */
 define('ROOT', __DIR__);
 
@@ -8,4 +8,3 @@ define('ROOT', __DIR__);
 | NOTE: FOR FUNCTION
 */
 $ROOT = ROOT;
-?>
