@@ -32,6 +32,6 @@ foreach (glob(ROOT . '/common/css/*.*') as $key) {
     echo Helper\Css::REQUIRE('common/css/'.basename($key));
 }
 
-foreach (glob(ROOT . '/common/css/display/*.*') as $key) {
-    echo Helper\Css::REQUIRE('common/css/display/'.basename($key));
+foreach (glob(ROOT . '/common/css/basic/*.*') as $key) {
+    echo Helper\Css::REQUIRE('common/css/basic/'.basename($key));
 }
