@@ -33,9 +33,9 @@ switch (HOST) {
 
             # NO DATABASE
             $SYSTEM_CACHE = [
-                'CACHE' => '?v='.substr(time(), -6)
+                'CACHE' => ''
             ];
-            
+
         }
         break;
 }
