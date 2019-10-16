@@ -1,6 +1,3 @@
-/*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-*/
 $('.control-evt').mouseenter(function(e) {
     e.preventDefault();
     id = e.currentTarget.dataset.id;

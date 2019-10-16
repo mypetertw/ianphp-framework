@@ -1,6 +1,3 @@
-/*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-*/
 $('.header-admin-icon-menu-evt-btn').mouseenter(function() {
     $('.header-admin-icon-menu-evt, .close-admin-icon-menu').fadeIn('fast');
 });
