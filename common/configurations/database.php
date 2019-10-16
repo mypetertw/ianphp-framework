@@ -16,7 +16,7 @@ if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['D
         date_default_timezone_set('Asia/Taipei');
 
     } catch (PDOException $e) {
-        exit ($e->getMessage());
+        exit ('SOMETHING WENT WRONG: ' . $e->getMessage());
     }
-    
+
 }

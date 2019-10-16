@@ -4,15 +4,15 @@ require_once ROOT . '/common/frontend.php';
 
 if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['DB_PASSWORD'] && $LOCAL_CONFIG['DB_NAME']) {
     if (!TABLE_EXIST('user')) {
-      exit ('USER TABLE NOT EXIST.');
+      exit ('SOMETHING WENT WRONG: USER TABLE NOT EXIST.');
     }
 
     if (!TABLE_EXIST('setting')) {
-      exit ('SETTING TABLE NOT EXIST.');
+      exit ('SOMETHING WENT WRONG: SETTING TABLE NOT EXIST.');
     }
 
     if (!TABLE_EXIST('permission')) {
-      exit ('PERMISSION TABLE NOT EXIST.');
+      exit ('SOMETHING WENT WRONG: PERMISSION TABLE NOT EXIST.');
     }
 }
 

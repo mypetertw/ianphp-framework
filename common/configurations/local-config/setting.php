@@ -9,11 +9,11 @@ if (file_exists(ROOT . '/local-config.json')) {
 }
 
 if (!is_writable(ROOT . '/images')) {
-  exit ('/images IS NOT WTITABLE.');
+    exit ('SOMETHING WENT WRONG: /images IS NOT WTITABLE.');
 }
 
 if (!is_writable(ROOT . '/')) {
-    exit ('/ IS NOT WTITABLE.');
+    exit ('SOMETHING WENT WRONG: / IS NOT WTITABLE.');
 }
 ?>
 
