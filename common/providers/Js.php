@@ -10,6 +10,7 @@ $CUSTOM_JS = [
     // 'vendor/clipboard.js-master/dist/clipboard.min.js',
     // 'vendor/Croppie-master/croppie.min.js',
     // 'vendor/fancybox-2.1.7/source/jquery.fancybox.pack.js',
+    // 'vendor/WOW-master/dist/wow.min.js',
 ];
 foreach ($CUSTOM_JS as $key) {
     echo Helper\Js::REQUIRE($key);
