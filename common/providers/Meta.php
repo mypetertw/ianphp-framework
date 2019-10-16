@@ -1,7 +1,6 @@
 <?
 /*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-| COMMON META INFORMATION
+| NOTE: COMMON META INFORMATION
 */
 $COMMON_META = [
     '<meta property="og:locale" content="' . $SETTING_META['data_1'] . '" />',

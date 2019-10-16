@@ -233,10 +233,10 @@ class Btn {
   }
 
   public function ADD($ROUTER, $STRING = '') {
-    return '<button onclick="location.href=\'' . $ROUTER . '\'; return false;" style="right: -12px;" class="pointer translate-without z-index-10 border-0 ease-in-out add-btn"><i class="material-icons vertical-bottom font-20">add</i> ' . $STRING . '</button>';
+    return '<button onclick="location.href=\'' . $ROUTER . '\'; return false;" style="right: -12px;" class="pointer translate-without border-0 ease-in-out add-btn"><i class="material-icons vertical-bottom font-20">add</i> ' . $STRING . '</button>';
   }
 
   public function BLACK_ADD($ROUTER, $STRING = '') {
-    return '<button onclick="location.href=\'' . $ROUTER . '\'; return false;" style="right: 0px;" class="pointer translate-without z-index-10 border-0 ease-in-out general-black-btn">＋ ' . $STRING . '</button>';
+    return '<button onclick="location.href=\'' . $ROUTER . '\'; return false;" style="right: 0px;" class="pointer translate-without border-0 ease-in-out general-black-btn">＋ ' . $STRING . '</button>';
   }
 }

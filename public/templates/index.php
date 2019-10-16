@@ -1,7 +1,4 @@
 <?
-/*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-*/
 require_once __DIR__ . '/../../common/header.php';
 require_once ROOT . '/public/views/header.framework.php';
 ?>

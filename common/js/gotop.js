@@ -5,7 +5,7 @@ $(function() {
         }, 1000);
     });
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 500) {
             $('#gotop').fadeIn('fast');
         } else {
             $('#gotop').stop().fadeOut('fast');

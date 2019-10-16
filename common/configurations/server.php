@@ -1,6 +1,6 @@
 <?
 /*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
+| NOTE: START SESSION
 */
 if (!isset($_SESSION)) {
     session_start();

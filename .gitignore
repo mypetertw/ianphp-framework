@@ -1,5 +1,7 @@
 *.DS_Store
 #local-config.json
+pull.php
+pullc.php
 
 ###### CUSTOM BELOW ######
 images/setting/*

@@ -24,7 +24,7 @@ foreach (glob(ROOT . '/public/css/*.*') as $key) {
 /*
 | NOTE: META INFORMATION
 */
-require_once ROOT . '/common/meta.php';
+require_once ROOT . '/common/providers/Meta.php';
 require_once ROOT . '/common/providers/MetaRoutes.php';
 require_once ROOT . '/common/providers/MetaCustom.php';
 

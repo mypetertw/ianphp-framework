@@ -1,3 +1,15 @@
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
 .spacing-5 {
     letter-spacing: 5px;
 }

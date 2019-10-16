@@ -4,11 +4,12 @@
         Options -Indexes
         Options +FollowSymlinks
     </IfModule>
-    
+
     RewriteEngine on
 
     RewriteRule ^$ public/templates/index.php
     RewriteRule ^admin/$ admin/templates/index.php
+    RewriteRule ^common/configurations/local-config/([\w\-]+)$ common/configurations/local-config/$1.php [L]
     RewriteRule ^admin/([\w\-]+)$ admin/templates/$1.php [L]
     RewriteRule ^([\w\-]+)$ public/templates/$1.php [L]
     RewriteRule ^handlers/([\w\-]+)$ public/handlers/$1.php [L]

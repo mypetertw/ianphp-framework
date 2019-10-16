@@ -24,7 +24,7 @@ foreach (glob(ROOT . '/admin/css/*.*') as $key) {
 /*
 | NOTE: META INFORMATION
 */
-require_once ROOT . '/common/meta.php';
+require_once ROOT . '/common/providers/Meta.php';
 
 /*
 | NOTE: TITLE TAG
