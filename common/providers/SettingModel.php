@@ -36,4 +36,7 @@ if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['D
         'data_4' => '',
     ];
 
+    # ROBOTS
+    define('ROBOTS', '<meta name="robots" content="noindex, nofollow">');
+
 }
