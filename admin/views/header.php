@@ -5,8 +5,8 @@
         <!-- <form style="display: inline-block;" id="search">
             <div class="relative">
                 <input class="header-search-box left-20 vertical-middle" placeholder="<?=$_SESSION['search_query'] ? $_SESSION['search_query'] : 'Search';?>" id="search_query" value="<?=$_SESSION['search_query'];?>">
-                <button type="submit" class="translate-without search-btn ease-in-out" style="right: 20px; visibility: hidden;"></button>
-                <span class="translate-without" id="search-loading" style="right: 20px;"></span>
+                <button type="submit" class="translate-without-left search-btn ease-in-out" style="right: 20px; visibility: hidden;"></button>
+                <span class="translate-without-left" id="search-loading" style="right: 20px;"></span>
             </div>
         </form> -->
         </div>
