@@ -1,7 +1,4 @@
 <?
-/*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-*/
 foreach (glob(ROOT . '/admin/models/*.php') as $key) {
     require_once $key;
 }

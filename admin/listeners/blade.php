@@ -1,7 +1,6 @@
 <?
 /*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-| AUTO FIND ALL BLADES
+| NOTE: AUTO FIND ALL BLADES
 | "user.index" MEANS "user/index.php" IN /admin/templates
 | USE "require_once BLADE;" IN templates TO GET BLADE
 */

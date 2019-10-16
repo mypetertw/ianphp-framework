@@ -1,8 +1,4 @@
 <?
-/*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-| JS AUTOLOAD
-*/
 foreach (glob(ROOT . '/admin/js/*.js') as $key) {
     echo Helper\Js::REQUIRE('admin/js/'.basename($key));
 }

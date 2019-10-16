@@ -1,7 +1,4 @@
 <?
-/*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-*/
 namespace Manager;
 
 class Get {
