@@ -1,7 +1,6 @@
 <?
 /**
  * START SESSION
- * @global
  */
 if (!isset($_SESSION)) {
     session_start();
@@ -13,7 +12,12 @@ if (!isset($_SESSION)) {
 header('Content-Type: text/html; charset=utf-8');
 
 /**
- * ERROR SETTING
+ * MEMORY
+ */
+ini_set('memory_limit', '-1');
+
+/**
+ * ERROR DISPLAY
  */
 ini_set('display_errors', 0);
 error_reporting(E_ALL & ~E_NOTICE);
@@ -40,16 +44,3 @@ $TIME_NOW = time();
 $MOBILE = '<div class="display-mobile">';
 $DESKTOP = '<div class="display-desktop">';
 $END = '</div>';
-
-/**
- * DEFINE HTML TAGS
- */
-define('BODY_START', '</head><body>');
-define('BODY_END', '</body></html>');
-define('HTML_START', '<!DOCTYPE html><html><head>');
-define('VIEWPORT', '<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">');
-
-/**
- * MEMORY
- */
-ini_set('memory_limit', '-1');
