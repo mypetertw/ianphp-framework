@@ -1,7 +1,9 @@
 <?
-/*
-| NOTE: CUSTOM PERMISSION (WITH DATABASE)
-*/
+/**
+ * CUSTOM PERMISSION (WITH DATABASE)
+ *
+ * @example /templetes/manager, /templetes/user, /templetes/setting
+ */
 $PERMISSION_FIELD = [
     'manager',
     'user',

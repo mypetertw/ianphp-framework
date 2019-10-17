@@ -2,9 +2,9 @@
 require_once __DIR__ . '/../../root.php';
 require_once ROOT . '/common/backend.php';
 
-/*
-| NOTE: START WORKING
-*/
+/**
+ * START CODING
+ */
 $stmt = $PDO->prepare(
     "SELECT id, session FROM `user`
     WHERE `email` = :email
@@ -27,7 +27,7 @@ if ($response['block'] === 1) {
 $_SESSION['admin-id'] = $response['id'];
 $_SESSION['admin-session'] = $response['session'];
 
-/*
-| NOTE: SUCCESS RESPONSE 200
-*/
+/**
+ * @return code 200
+ */
 exit (Server\Response::SUCCESS());

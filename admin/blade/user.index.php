@@ -1,7 +1,10 @@
 <?
-/*
-| NOTE: IF DATA IS EMPTY
-*/
+/**
+ * CHECK Array IF EMPTY
+ *
+ * @param Array
+ * @return EMPTY_DATA
+ */
 if (sizeof(User\Get::LIST(false)) === 0) {
     echo Helper\Layout::EMPTY_DATA('目前無更多使用者');
 } else { ?>
@@ -35,8 +38,5 @@ if (sizeof(User\Get::LIST(false)) === 0) {
 
             </div>
         </div>
-    <? endforeach;
-/*
-| NOTE: ENDBLADE
-*/
-}
+    <? endforeach; ?>
+<? } ?>

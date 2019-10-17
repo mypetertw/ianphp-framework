@@ -1,9 +1,11 @@
 <?
-/*
-| NOTE: AUTO FIND ALL BLADES
-| "user.index" MEANS "user/index.php" IN /admin/templates
-| USE "require_once BLADE;" IN templates TO GET BLADE
-*/
+/**
+ * AUTO FIND ALL BLADES
+ *
+ * "user.index" MEANS "user/index.php" IN /admin/templates
+ * @example USE "require_once BLADE;" IN templates TO GET BLADE
+ * @return define
+ */
 foreach (array_diff(scandir(ROOT . '/admin/blade/'), array('.', '..')) as $key) {
     $GET_ROUTER = explode('.', str_replace('.php', '', $key));
 

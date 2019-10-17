@@ -2,9 +2,9 @@
 require_once __DIR__ . '/../../root.php';
 require_once ROOT . '/common/backend.php';
 
-/*
-| NOTE: START WORKING
-*/
+/**
+ * START CODING
+ */
 $PDO->query(
     "UPDATE `permission` SET
     `user` = 0,
@@ -33,7 +33,7 @@ foreach ($_POST['setting'] as $key => $value) {
     );
 }
 
-/*
-| NOTE: SUCCESS RESPONSE 200
-*/
+/**
+ * @return code 200
+ */
 exit (Server\Response::SUCCESS());

@@ -2,9 +2,9 @@
 require_once __DIR__ . '/../../root.php';
 require_once ROOT . '/common/backend.php';
 
-/*
-| NOTE: START WORKING
-*/
+/**
+ * START CODING
+ */
 try {
     $PDO->beginTransaction();
 
@@ -30,7 +30,7 @@ try {
     exit (Server\Response::FAILED($e->getMessage(), true, HANDLER, NOW_SELF, 'error-msg'));
 }
 
-/*
-| NOTE: SUCCESS RESPONSE 200
-*/
+/**
+ * @return code 200
+ */
 exit (Server\Response::SUCCESS());
