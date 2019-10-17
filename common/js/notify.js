@@ -1,6 +1,3 @@
-/*
-| NOTE: NOTIFY EVENTS (WITH /common/handlers/notify.php)
-*/
 if (ADMIN == 'true') {
 
     function GET_ONLINE_STATUS() {

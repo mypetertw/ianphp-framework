@@ -1,7 +1,4 @@
 <?
-/*
-| NOTE: NOTIFY
-*/
 require_once __DIR__ . '/../../root.php';
 require_once ROOT . '/common/configurations/local.php';
 
@@ -13,29 +10,33 @@ switch (HANDLER) {
 
     case 'get-online-status-admin':
 
-        $stmt = $PDO->prepare(
-            "UPDATE `user` SET
-            `online_status` = :online_status
-            WHERE `id` = :target_id "
-        );
-        $stmt->execute([
-            'online_status' => $TIME_NOW,
-            'target_id' => $_SESSION['admin-id']
-        ]);
+        if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['DB_PASSWORD'] && $LOCAL_CONFIG['DB_NAME']) {
+            $stmt = $PDO->prepare(
+                "UPDATE `user` SET
+                `online_status` = :online_status
+                WHERE `id` = :target_id "
+            );
+            $stmt->execute([
+                'online_status' => $TIME_NOW,
+                'target_id' => $_SESSION['admin-id']
+            ]);
+        }
 
         break;
 
     case 'get-online-status':
 
-        $stmt = $PDO->prepare(
-            "UPDATE `user` SET
-            `online_status` = :online_status
-            WHERE `id` = :target_id "
-        );
-        $stmt->execute([
-            'online_status' => $TIME_NOW,
-            'target_id' => $_SESSION['user-id']
-        ]);
+        if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['DB_PASSWORD'] && $LOCAL_CONFIG['DB_NAME']) {
+            $stmt = $PDO->prepare(
+                "UPDATE `user` SET
+                `online_status` = :online_status
+                WHERE `id` = :target_id "
+            );
+            $stmt->execute([
+                'online_status' => $TIME_NOW,
+                'target_id' => $_SESSION['user-id']
+            ]);
+        }
 
         break;
 
