@@ -1,6 +1,6 @@
 <?
 /**
- * SOME ENV VALUES
+ * ENV VALUES
  */
 if (HOST == DEVELOPMENT) {
     $HOST_URL = 'http://' . DEVELOPMENT;

@@ -3,11 +3,21 @@ require_once __DIR__ . '/../../root.php';
 
 /**
  * GET local-config.json INFORMATION
+ * IF NO INFORMATION, REDIRECT TO local-config.json SETTING
  */
 if (file_exists(ROOT . '/local-config.json')) {
     $LOCAL_CONFIG = json_decode(file_get_contents(ROOT . '/local-config.json'), true);
 } else {
     exit (header('location: /common/configurations/local-config/setting'));
+}
+
+/**
+ * GET DATABASE INFORMATION
+ *
+ * @return Boolean
+ */
+if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['DB_PASSWORD'] && $LOCAL_CONFIG['DB_NAME']) {
+    $DATABASE_ENABLE = true;
 }
 
 define('DEVELOPMENT', $LOCAL_CONFIG['DEV_HOST']);
