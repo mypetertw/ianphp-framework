@@ -1,7 +1,7 @@
 <?
-/*
-| NOTE: COMMON META INFORMATION
-*/
+/**
+ * COMMON META & LINK TAGS
+ */
 $COMMON_META = [
     '<meta property="og:locale" content="' . $SETTING_META['data_1'] . '" />',
     '<meta property="og:type" content="website" />',

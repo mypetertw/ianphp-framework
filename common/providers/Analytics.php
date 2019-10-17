@@ -1,8 +1,7 @@
 <?
-/*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-| GOOGLE ANALYTICS
-*/
+/**
+ * GOOGLE ANALYTICS
+ */
 if ($SETTING_ANALYTICS['data_1']) { ?>
     <script async src="https://www.googletagmanager.com/gtag/js?id=<?=$SETTING_ANALYTICS['data_1'];?>"></script>
     <script>
@@ -14,12 +13,7 @@ if ($SETTING_ANALYTICS['data_1']) { ?>
     </script>
 <? } ?>
 
-<?
-/*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-| FACEBOOK ANALYTICS
-*/
-if ($SETTING_ANALYTICS['data_2']) { ?>
+<? if ($SETTING_ANALYTICS['data_2']) { ?>
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?

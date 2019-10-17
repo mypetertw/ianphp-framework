@@ -1,9 +1,9 @@
 <?php
 require_once __DIR__ . '/../../root.php';
 
-/*
-| NOTE: GET local-config.json INFORMATION
-*/
+/**
+ * GET local-config.json INFORMATION
+ */
 if (file_exists(ROOT . '/local-config.json')) {
     $LOCAL_CONFIG = json_decode(file_get_contents(ROOT . '/local-config.json'), true);
 } else {

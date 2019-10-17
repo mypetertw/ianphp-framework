@@ -2,6 +2,9 @@
 require_once __DIR__ . '/../root.php';
 require_once ROOT . '/common/frontend.php';
 
+/**
+ * CHECK TABLE EXIST OR NOT
+ */
 if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['DB_PASSWORD'] && $LOCAL_CONFIG['DB_NAME']) {
     if (!TABLE_EXIST('user')) {
       exit ('SOMETHING WENT WRONG: USER TABLE NOT EXIST.');
@@ -18,16 +21,19 @@ if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['D
 
 require_once ROOT . '/common/configurations/local-config/exist.php';
 
-/*
-| NOTE: BASIC HTML TAGS
-*/
+/**
+ * @return BASIC HTML TAGS
+ */
 echo HTML_START . VIEWPORT . ROBOTS;
 
+/**
+ * LOAD CUSTOM CSS
+ */
 require_once ROOT . '/common/providers/Css.php';
 
-/*
-| NOTE: CSS AUTOLOAD
-*/
+/**
+ * AUTOLOAD COMMON CSS
+ */
 foreach (glob(ROOT . '/common/css/*.*') as $key) {
     echo Helper\Css::REQUIRE('common/css/'.basename($key));
 }

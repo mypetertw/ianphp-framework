@@ -1,8 +1,7 @@
 <?
-/*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-| CUSTOM AUTOCREATE START WITH images/
-*/
+/**
+ * CUSTOM AUTO CREATE DIR ON images/ PATH
+ */
 $MKDIR = [
     'images/setting',
     'images/setting/icon',

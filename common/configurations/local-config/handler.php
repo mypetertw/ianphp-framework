@@ -1,7 +1,7 @@
 <?
-/*
-| NOTE: CREATE local-config.json
-*/
+/**
+ * CREATE local-config.json
+ */
 require_once __DIR__ . '/../../../root.php';
 
 $CREATE = fopen(ROOT . '/local-config.json', 'w');

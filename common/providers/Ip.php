@@ -1,8 +1,9 @@
 <?
-/*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-| GET IP ADDRESS
-*/
+/**
+ * GET IP ADDRESS
+ *
+ * @return $IP
+ */
 $IP = 'Unknown';
 if (isset($_SERVER['HTTP_CLIENT_IP'])) {
   $IP = $_SERVER['HTTP_CLIENT_IP'];
@@ -20,5 +21,16 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])) {
   $IP = $_SERVER['REMOTE_ADDR'];
 }
 
+/**
+ * GET UNIQUE IP
+ *
+ * @return $UNIQUE_IP
+ */
 $UNIQUE_IP = str_replace('.', '', $IP);
+
+/**
+ * GET SESSION ID (UNIQUE)
+ *
+ * @return $SESSION
+ */
 $SESSION = hash('sha256', $UNIQUE_IP . time() . rand(1, 9999999999));

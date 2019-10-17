@@ -1,7 +1,7 @@
 <?
-/*
-| NOTE: CUSTOM META
-*/
+/**
+ * CUSTOM META TAGS
+ */
 $META = [
     '<meta property="og:url" content="' . $SYSTEM_VARIABLE['HOST_URL_NO_SLASH'] . NOW_URI . '" />',
     '<meta property="og:title" content="' . $META_TITLE . ($META_TITLE ? '・' : '') . $SETTING_WEBSITE['data_1'] . '" />',

@@ -1,8 +1,9 @@
 <?php
-/*
-| NOTE: CONNECTION TO DATABASE
-*/
-
+/**
+ * CONNECTION TO DATABASE
+ * @param PDO
+ * @return Boolean
+ */
 if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['DB_PASSWORD'] && $LOCAL_CONFIG['DB_NAME']) {
 
     try {

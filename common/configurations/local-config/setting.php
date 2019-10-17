@@ -1,7 +1,7 @@
 <?
-/*
-| NOTE: SETTING local-config.json VALUES
-*/
+/**
+ * SETTING local-config.json VALUES
+ */
 require_once __DIR__ . '/../../../root.php';
 
 if (file_exists(ROOT . '/local-config.json')) {

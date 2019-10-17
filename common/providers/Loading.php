@@ -1,8 +1,9 @@
 <?
-/*
-| NOTE: ***IMPORTANT*** DO NOT EDIT THOSE VALUES ***IMPORTANT***
-| ROUTER LIKE /public/templates/index
-*/
+/**
+ * CUSTOM LOADING PAGE
+ *
+ * @example ROUTER LIKE: /public/templates/index
+ */
 $LOADING = [
   // '',
 ];

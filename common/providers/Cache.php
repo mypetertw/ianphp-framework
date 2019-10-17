@@ -1,7 +1,7 @@
 <?
-/*
-| NOTE: CACHE FOR CSS AND JS
-*/
+/**
+ * CACHE FOR CSS & JS
+ */
 switch (HOST) {
 
     case DEVELOPMENT:

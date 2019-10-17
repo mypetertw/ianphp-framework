@@ -1,7 +1,7 @@
 <?
-/*
-| NOTE: CUSTOM LAYOUTS
-*/
+/**
+ * CUSTOM LAYOUTS
+ */
 $LINE_30 = '<div class="line top-bottom-30"></div>';
 $LINE_20 = '<div class="line top-bottom-20"></div>';
 $LINE_10 = '<div class="line top-bottom-10"></div>';

@@ -1,7 +1,7 @@
 <?
-/*
-| NOTE: SETUP DATABASE
-*/
+/**
+ * SETUP DATABASE
+ */
 if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['DB_PASSWORD'] && $LOCAL_CONFIG['DB_NAME']) {
 
     require_once ROOT . '/common/configurations/local.php';

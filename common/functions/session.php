@@ -1,4 +1,7 @@
 <?
+/**
+ * SESSION DESTORY
+ */
 if (!isset($_SESSION)) {
     session_start();
 }
