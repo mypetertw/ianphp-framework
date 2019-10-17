@@ -27,16 +27,9 @@ foreach (glob(ROOT . '/public/css/*.*') as $key) {
     echo Helper\Css::REQUIRE('public/css/'.basename($key));
 }
 
-/**
- * META TAG
- */
 require_once ROOT . '/common/providers/Meta.php';
 require_once ROOT . '/common/providers/MetaRoutes.php';
 require_once ROOT . '/common/providers/MetaCustom.php';
-
-/**
- * ANALYTICS
- */
 require_once ROOT . '/common/providers/Analytics.php';
 
 /**
