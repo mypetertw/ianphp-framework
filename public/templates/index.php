@@ -1,13 +1,13 @@
 <?
 require_once __DIR__ . '/../../common/header.php';
-require_once ROOT . '/public/views/header.framework.php';
+require_once ROOT . '/common/public.header.php';
 ?>
 
 <div class="container">
-    <h1>HELLO WORLD!</h1>
+    HELLO WORLD
 </div>
 
 <?
 require_once ROOT . '/common/footer.php';
-require_once ROOT . '/public/views/footer.framework.php';
+require_once ROOT . '/common/public.footer.php';
 ?>
