@@ -7,12 +7,9 @@ foreach (glob(ROOT . '/public/handlers/*.js') as $key) {
     echo Helper\Js::REQUIRE('public/handlers/'.basename($key));
 }
 
-/*
-| NOTE: FOOTER
-*/
 require_once ROOT . '/public/views/footer.php';
 
-/*
-| NOTE: END BODY TAG
-*/
+/**
+ * @return BODY HTML TAGS
+ */
 echo BODY_END;
