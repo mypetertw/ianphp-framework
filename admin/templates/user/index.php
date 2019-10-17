@@ -1,6 +1,6 @@
 <?
 require_once __DIR__ . '/../../../common/header.php';
-require_once ROOT . '/common/admin.header.php';
+require_once ROOT . '/common/header.admin.php';
 ?>
 
 <div class="admin-container">
@@ -28,5 +28,5 @@ require_once ROOT . '/common/admin.header.php';
 
 <?
 require_once ROOT . '/common/footer.php';
-require_once ROOT . '/common/admin.footer.php';
+require_once ROOT . '/common/footer.admin.php';
 ?>
