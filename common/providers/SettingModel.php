@@ -14,17 +14,37 @@ if ($DATABASE_ENABLE) {
 
     # NO DATABASE
     $SETTING_META = [
+
+        // LANGUAGE
         'data_1' => 'zh_TW',
+
+        // ROBOTS
         'data_2' => 1,
+
+        // SHORTCUT ICON
         'data_3' => '/images/instagram.png',
+
+        // SHARE PREVIEW
         'data_4' => '/images/instagram.png',
+
+        // KEYWORD
         'data_5' => 'keyword',
+
+        // DESCRIPTION
         'data_6' => 'description',
+
     ];
     $SETTING_WEBSITE = [
+
+        // TITLE
         'data_1' => '未命名網站(無DB)',
+
+        // LOGO
         'data_2' => '/images/instagram.png',
+        
     ];
+
+    # DEFAULT
     $SETTING_ANALYTICS = [
         'data_1' => 0,
         'data_2' => 0,
