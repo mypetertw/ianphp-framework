@@ -31,6 +31,7 @@ define('ROUTER', str_replace('.php', '', $_SERVER['PHP_SELF']));
 require_once ROOT . '/common/configurations/database.php';
 require_once ROOT . '/common/configurations/server.php';
 require_once ROOT . '/common/configurations/env.php';
+require_once ROOT . '/vendor/autoload.php';
 
 foreach (glob(ROOT . '/common/functions/*.php') as $key) {
     require_once $key;
