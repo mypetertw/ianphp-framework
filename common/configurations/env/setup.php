@@ -2,7 +2,7 @@
 /**
  * SETUP DATABASE
  */
-if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['DB_PASSWORD'] && $LOCAL_CONFIG['DB_NAME']) {
+if ($DATABASE_ENABLE) {
 
     require_once ROOT . '/common/configurations/local.php';
     require_once ROOT . '/common/providers/Ip.php';
@@ -76,7 +76,7 @@ if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['D
         'permission_id' => 1
       ]);
 
-      Helper\Slack::SEND_MESSAGE(HOST . ': USER 設定完成。', 'local/config', NOW_SELF, 'local-config');
+      Helper\Slack::SEND_MESSAGE(HOST . ': USER 設定完成。', 'local/config', NOW_SELF, 'env');
     }
 
     $FIND_SETTING = Queries\Select::FETCH($PDO->prepare(
@@ -143,7 +143,7 @@ if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['D
         WHERE `setting_type` = 'cache' "
       );
 
-      Helper\Slack::SEND_MESSAGE(HOST . ': SETTING 設定完成。', 'local/config', NOW_SELF, 'local-config');
+      Helper\Slack::SEND_MESSAGE(HOST . ': SETTING 設定完成。', 'local/config', NOW_SELF, 'env');
     }
 
     $FIND_PERMISSION = Queries\Select::FETCH($PDO->prepare(
@@ -195,6 +195,6 @@ if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['D
         WHERE `permission_id` = 10 "
       );
 
-      Helper\Slack::SEND_MESSAGE(HOST . ': PERMISSION 設定完成。', 'local/config', NOW_SELF, 'local-config');
+      Helper\Slack::SEND_MESSAGE(HOST . ': PERMISSION 設定完成。', 'local/config', NOW_SELF, 'env');
     }
 }

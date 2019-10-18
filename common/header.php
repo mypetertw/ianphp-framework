@@ -5,7 +5,7 @@ require_once ROOT . '/common/frontend.php';
 /**
  * CHECK TABLE EXIST
  */
-if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['DB_PASSWORD'] && $LOCAL_CONFIG['DB_NAME']) {
+if ($DATABASE_ENABLE) {
     if (!TABLE_EXIST('user')) {
       exit ('SOMETHING WENT WRONG: USER TABLE NOT EXIST.');
     }
@@ -22,7 +22,7 @@ if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['D
 /**
  * CHECK LOCAL CONFIG EXIST
  */
-require_once ROOT . '/common/configurations/local-config/exist.php';
+require_once ROOT . '/common/configurations/env/exist.php';
 
 /**
  * BASIC HTML TAG

@@ -1,10 +1,10 @@
 <?
 /**
- * SETTING local-config.json VALUES
+ * SETTING env.json VALUES
  */
 require_once __DIR__ . '/../../../root.php';
 
-if (file_exists(ROOT . '/local-config.json')) {
+if (file_exists(ROOT . '/env.json')) {
     exit (header('location: /'));
 }
 
@@ -38,7 +38,7 @@ button {
 </style>
 
 <div style="margin: 50px auto; width: 350px; text-align: left;">
-    <form action="/common/configurations/local-config/handler" method="post">
+    <form action="/common/configurations/env/handler" method="post">
         資料庫 IP
         <input name="DB_HOST" placeholder="資料庫 IP" value="172.104.102.244"><br>
         資料庫帳號
@@ -55,6 +55,6 @@ button {
         <input name="SLACK_WEBHOOK" placeholder="SLACK WEBHOOK" value="https://hooks.slack.com/services/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">
         <br>
         <br>
-        <button type="submit">建立 local-config.json 設定檔</button>
+        <button type="submit">建立 env.json 設定檔</button>
     </form>
 </div>

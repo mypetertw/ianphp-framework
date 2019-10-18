@@ -14,7 +14,7 @@ switch (HOST) {
     case PRODUCTION:
     case PRODUCTION_WWW:
 
-        if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['DB_PASSWORD'] && $LOCAL_CONFIG['DB_NAME']) {
+        if ($DATABASE_ENABLE) {
 
             # DATABASE
             $stmt = $PDO->prepare(

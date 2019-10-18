@@ -10,7 +10,7 @@ switch (HANDLER) {
 
     case 'get-online-status-admin':
 
-        if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['DB_PASSWORD'] && $LOCAL_CONFIG['DB_NAME']) {
+        if ($DATABASE_ENABLE) {
             $stmt = $PDO->prepare(
                 "UPDATE `user` SET
                 `online_status` = :online_status
@@ -26,7 +26,7 @@ switch (HANDLER) {
 
     case 'get-online-status':
 
-        if ($LOCAL_CONFIG['DB_HOST'] && $LOCAL_CONFIG['DB_USERNAME'] && $LOCAL_CONFIG['DB_PASSWORD'] && $LOCAL_CONFIG['DB_NAME']) {
+        if ($DATABASE_ENABLE) {
             $stmt = $PDO->prepare(
                 "UPDATE `user` SET
                 `online_status` = :online_status

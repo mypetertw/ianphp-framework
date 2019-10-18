@@ -1,10 +1,10 @@
 <?
 /**
- * CREATE local-config.json
+ * CREATE env.json
  */
 require_once __DIR__ . '/../../../root.php';
 
-$CREATE = fopen(ROOT . '/local-config.json', 'w');
+$CREATE = fopen(ROOT . '/env.json', 'w');
 $JSON = [
     'DB_HOST' => $_POST['DB_HOST'],
     'DB_USERNAME' => $_POST['DB_USERNAME'],
@@ -17,7 +17,7 @@ $JSON = [
 fwrite($CREATE, json_encode($JSON));
 fclose($CREATE);
 
-$LOCAL_CONFIG = json_decode(file_get_contents(ROOT . '/local-config.json'), true);
-require_once ROOT . '/common/configurations/local-config/setup.php';
+$LOCAL_CONFIG = json_decode(file_get_contents(ROOT . '/env.json'), true);
+require_once ROOT . '/common/configurations/env/setup.php';
 
 header('location: /');
