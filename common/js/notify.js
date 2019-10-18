@@ -1,4 +1,4 @@
-if (ADMIN == 'true') {
+if (ADMIN) {
 
     function GET_ONLINE_STATUS() {
         $('.load').load('/common/handlers/notify?handler=get-online-status-admin');

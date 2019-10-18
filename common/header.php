@@ -5,18 +5,16 @@ require_once ROOT . '/common/frontend.php';
 /**
  * CHECK TABLE EXIST
  */
-if ($DATABASE_ENABLE) {
-    if (!TABLE_EXIST('user')) {
-      exit ('SOMETHING WENT WRONG: USER TABLE NOT EXIST.');
-    }
+if ($DATABASE_ENABLE && !TABLE_EXIST('user')) {
+    exit ('SOMETHING WENT WRONG: USER TABLE NOT EXIST.');
+}
 
-    if (!TABLE_EXIST('setting')) {
-      exit ('SOMETHING WENT WRONG: SETTING TABLE NOT EXIST.');
-    }
+if ($DATABASE_ENABLE && !TABLE_EXIST('setting')) {
+    exit ('SOMETHING WENT WRONG: SETTING TABLE NOT EXIST.');
+}
 
-    if (!TABLE_EXIST('permission')) {
-      exit ('SOMETHING WENT WRONG: PERMISSION TABLE NOT EXIST.');
-    }
+if ($DATABASE_ENABLE && !TABLE_EXIST('permission')) {
+    exit ('SOMETHING WENT WRONG: PERMISSION TABLE NOT EXIST.');
 }
 
 /**
@@ -25,9 +23,9 @@ if ($DATABASE_ENABLE) {
 require_once ROOT . '/common/configurations/env/exist.php';
 
 /**
- * BASIC HTML TAG
+ * HTML TAG
  */
-echo HTML_START . VIEWPORT . ROBOTS;
+echo HTML_START . ROBOTS;
 
 /**
  * CUSTOM CSS

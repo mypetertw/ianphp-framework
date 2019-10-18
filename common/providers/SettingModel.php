@@ -37,11 +37,11 @@ if ($DATABASE_ENABLE) {
     $SETTING_WEBSITE = [
 
         // TITLE
-        'data_1' => '未命名網站(無DB)',
+        'data_1' => '翰燁資訊',
 
         // LOGO
         'data_2' => '/images/instagram.png',
-        
+
     ];
 
     # DEFAULT

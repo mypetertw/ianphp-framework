@@ -1,6 +1,6 @@
 <?
 /**
- * GOOGLE ANALYTICS
+ * ANALYTICS
  */
 if ($SETTING_ANALYTICS['data_1']) { ?>
     <script async src="https://www.googletagmanager.com/gtag/js?id=<?=$SETTING_ANALYTICS['data_1'];?>"></script>

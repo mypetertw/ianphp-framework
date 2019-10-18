@@ -1,4 +1,7 @@
 <?
+/**
+ * LAYOUT ON BOTTOM (PREPARE FOR JS EVENT)
+ */
 $BASIC_LAYOUT = [
     '<div id="gotop">↑</div>',
     '<div class="display-none notification-message"></div>',

@@ -1,6 +1,7 @@
 <?
 /**
  * CUSTOM LAYOUTS
+ * SHORTCUT WITH CSS
  */
 $LINE_30 = '<div class="line top-bottom-30"></div>';
 $LINE_20 = '<div class="line top-bottom-20"></div>';

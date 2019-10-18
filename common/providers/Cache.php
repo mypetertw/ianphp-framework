@@ -1,6 +1,6 @@
 <?
 /**
- * CACHE FOR CSS & JS
+ * CLEAR CACHE FOR CSS & JS
  */
 switch (HOST) {
 
