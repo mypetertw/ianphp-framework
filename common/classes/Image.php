@@ -62,8 +62,8 @@ class Upload {
   public function BASE64($field, $id, $location) {
     GLOBAL $SYSTEM_VARIABLE, $SYSTEM_CACHE;
     preg_match('/^(data:\s*image\/(\w+);base64,)/', $_POST[''.$field.''], $result);
-    file_put_contents($SYSTEM_VARIABLE['UPLOAD_ROOT_DIR'] . '/' . $location . $id . '.' . strtolower($result[2]), base64_decode(str_replace($result[1], '', $_POST[''.$field.''])));
-    return $SYSTEM_VARIABLE['HOST_URL'] . $location . $id . '.' . strtolower($result[2]);
+    file_put_contents($SYSTEM_VARIABLE['UPLOAD_ROOT_DIR'] . $location . $id . '.' . strtolower($result[2]), base64_decode(str_replace($result[1], '', $_POST[''.$field.''])));
+    return $location . $id . '.' . strtolower($result[2]);
   }
 
   public function COMPRESS_SIZE($field, $id, $location, $sourse_location, $width_size) {
@@ -108,7 +108,7 @@ class Upload {
       break;
     }
 
-    return $SYSTEM_VARIABLE['HOST_URL'] . $location . $id . $type;
+    return $location . $id . $type;
   }
 
   public function CHECK_SIZE($field, $limit_size_mb, $limit_width, $limit_height) {
@@ -130,12 +130,12 @@ class Upload {
   }
 
   public function GENERAL($field, $id, $location) {
-    GLOBAL $SYSTEM_CACHE_VARIABLE, $SYSTEM_CACHE;
+    GLOBAL $SYSTEM_VARIABLE, $SYSTEM_CACHE;
 
     $type = strtolower(strrchr($_FILES[''.$field.'']['name'], '.'));
     $imgSource = $SYSTEM_VARIABLE['UPLOAD_ROOT_DIR'] . $location . $id . $type;
     if (move_uploaded_file($_FILES[''.$field.'']['tmp_name'], $imgSource)) {
-      return $SYSTEM_VARIABLE['HOST_URL'] . $location . $id . $type;
+      return $location . $id . $type;
     } else {
       return false;
     }

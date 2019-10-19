@@ -63,7 +63,7 @@ if (HOST == PRODUCTION_WWW) {
 $SYSTEM_VARIABLE = [
     'HOST_URL' => $HOST_URL .'/',
     'HOST_URL_NO_SLASH' => $HOST_URL,
-    'UPLOAD_ROOT_DIR' => __DIR__ . '/../../',
+    'UPLOAD_ROOT_DIR' => __DIR__ . '/../..',
     'VIEWS_MENU' => ROOT . '/admin/views/menu.php',
 ];
 
