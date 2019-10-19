@@ -1,6 +1,6 @@
 .left-side-content-link {
     font-size: 13.9px;
-    color: #ccc;
+    color: #b4b9be;
     display: block;
     padding: 10px 0;
     position: relative;
@@ -8,7 +8,7 @@
 
 .left-side-content-link-sec {
     font-size: 13.9px;
-    color: #ccc;
+    color: #b4b9be;
     display: block;
     padding: 10px 0 10px 20px;
     position: relative;
@@ -178,7 +178,6 @@
     border-bottom: 1px solid black;
 }
 
-#__paymentButton,
 .control-btn {
     background: #fff;
     border-radius: 30px;
