@@ -20,5 +20,5 @@ foreach (glob(ROOT . '/common/listeners/*.php') as $key) {
 }
 
 require_once ROOT . '/common/providers/Helper.php';
-require_once ROOT . '/common/providers/SettingModel.php';
+require_once ROOT . '/common/providers/DefaultSetting.php';
 require_once ROOT . '/common/providers/Pagination.php';

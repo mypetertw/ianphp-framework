@@ -25,7 +25,7 @@ require_once ROOT . '/common/configurations/env/exist.php';
 /**
  * HTML TAG
  */
-echo HTML_START . ROBOTS;
+echo HTML_START . $ROBOTS;
 
 /**
  * CUSTOM CSS

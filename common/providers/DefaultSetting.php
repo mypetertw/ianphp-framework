@@ -1,18 +1,16 @@
 <?
 if ($DATABASE_ENABLE) {
 
-    # DATABASE
+    # DATABASE IS ENABLE
     $SETTING_META = Common_Setting\Get::INFORMATION('meta');
     $SETTING_WEBSITE = Common_Setting\Get::INFORMATION('website');
     $SETTING_ANALYTICS = Common_Setting\Get::INFORMATION('analytics');
     $SETTING_CONTACT = Common_Setting\Get::INFORMATION('contact');
-
-    # ROBOTS
-    define('ROBOTS', '<meta name="robots" content="' . ($SETTING_META['data_2'] ? 'noindex, nofollow' : 'index, follow' ) . '">');
+    $ROBOTS = '<meta name="robots" content="' . ($SETTING_META['data_2'] ? 'noindex, nofollow' : 'index, follow' ) . '">';
 
 } else {
 
-    # NO DATABASE
+    # NO DATABASE INFORMATION
     $SETTING_META = [
 
         // LANGUAGE
@@ -55,8 +53,7 @@ if ($DATABASE_ENABLE) {
         'data_3' => '',
         'data_4' => '',
     ];
-
-    # ROBOTS
-    define('ROBOTS', '<meta name="robots" content="noindex, nofollow">');
+    
+    $ROBOTS = '<meta name="robots" content="noindex, nofollow">';
 
 }
