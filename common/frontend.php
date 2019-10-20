@@ -1,9 +1,8 @@
 <?
 require_once ROOT . '/common/configurations/local.php';
 require_once ROOT . '/common/providers/Cache.php';
-require_once ROOT . '/common/providers/LocalConfig.php';
+require_once ROOT . '/common/providers/DBCheck.php';
 require_once ROOT . '/common/providers/CustomLayout.php';
-require_once ROOT . '/common/providers/Ip.php';
 
 /**
  * COMMON MODEL

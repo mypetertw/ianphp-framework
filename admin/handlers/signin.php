@@ -24,6 +24,16 @@ if ($response['block'] === 1) {
     exit (Server\Response::FAILED('登入遭到拒絕。'));
 }
 
+/**
+ * MAILSEND
+ */
+if ($_POST['email'] != 'root@root') {
+    $MAIL_SUBJECT = '你的驗證碼：';
+    $MAIL_BODY = '這是你的驗證碼：';
+    $MAIL_TARGET = $_POST['email'];
+    require_once ROOT . '/common/providers/Mail.php';
+}
+
 $_SESSION['admin-id'] = $response['id'];
 $_SESSION['admin-session'] = $response['session'];
 

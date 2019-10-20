@@ -7,7 +7,10 @@ require_once ROOT . '/common/admin.header.php';
     <? require_once $SYSTEM_VARIABLE['VIEWS_MENU']; ?>
     <div class="right-side-content">
         <div class="right-side-content-container">
-            <div class="general-title weight-500 relative">一般</div>
+            <div class="general-title weight-500 relative">基本</div>
+            <?=$LINE_20;?>
+                <a href="index" class="title-tab-btn <?=ROUTER_SELF == 'index' ? 'active' : '';?> ease-in-out">基本</a>
+                <a href="mail" class="title-tab-btn <?=ROUTER_SELF == 'mail' ? 'active' : '';?> ease-in-out">Gmail 寄信</a>
             <?=$LINE_20;?>
 
             <form id="setting-index">

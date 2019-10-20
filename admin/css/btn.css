@@ -6,6 +6,26 @@
     position: relative;
 }
 
+.title-tab-btn {
+    font-size: 13px;
+    margin-right: 20px;
+    color: #ccc;
+}
+
+.title-tab-btn:hover {
+    color: #000;
+}
+
+.title-tab-btn:active {
+    opacity: .555;
+}
+
+.title-tab-btn.active {
+    font-size: 13px;
+    margin-right: 20px;
+    color: #000;
+}
+
 .left-side-content-link-sec {
     font-size: 13.9px;
     color: #b4b9be;
@@ -25,7 +45,7 @@
     opacity: .555;
 }
 
-.left-side-content-linka {
+.left-side-content-link.active {
     font-size: 13.9px;
     color: #000;
     display: block;
@@ -34,7 +54,7 @@
     text-decoration: underline !important;
 }
 
-.left-side-content-link-seca {
+.left-side-content-link-sec.active {
     font-size: 13.9px;
     color: #000;
     display: block;

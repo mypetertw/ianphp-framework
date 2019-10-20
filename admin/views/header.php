@@ -1,14 +1,14 @@
 <header class="header-container bg-white">
     <div class="header-left-layout">
         <div class="clear-font-size">
-        <a href="/admin/index"><img class="header-logo progress-bar-btn vertical-middle" src="<?=$SETTING_WEBSITE['data_2'];?>"></a>
-        <!-- <form style="display: inline-block;" id="search">
-            <div class="relative">
-                <input class="header-search-box left-20 vertical-middle" placeholder="<?=$_SESSION['search_query'] ? $_SESSION['search_query'] : 'Search';?>" id="search_query" value="<?=$_SESSION['search_query'];?>">
-                <button type="submit" class="translate-without-left search-btn ease-in-out" style="right: 20px; visibility: hidden;"></button>
-                <span class="translate-without-left" id="search-loading" style="right: 20px;"></span>
-            </div>
-        </form> -->
+            <a href="/admin/index"><img class="header-logo progress-bar-btn vertical-middle" src="<?=$SETTING_WEBSITE['data_2'];?>?v=<?=$SETTING_WEBSITE['edit_time'];?>"></a>
+            <!-- <form style="display: inline-block;" id="search">
+                <div class="relative">
+                    <input class="header-search-box left-20 vertical-middle" placeholder="<?=$_SESSION['search_query'] ? $_SESSION['search_query'] : 'Search';?>" id="search_query" value="<?=$_SESSION['search_query'];?>">
+                    <button type="submit" class="translate-without-left search-btn ease-in-out" style="right: 20px; visibility: hidden;"></button>
+                    <span class="translate-without-left" id="search-loading" style="right: 20px;"></span>
+                </div>
+            </form> -->
         </div>
     </div>
 

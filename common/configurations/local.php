@@ -30,6 +30,7 @@ define('ROUTER', str_replace('.php', '', $_SERVER['PHP_SELF']));
 
 require_once ROOT . '/common/configurations/database.php';
 require_once ROOT . '/common/configurations/server.php';
+require_once ROOT . '/common/providers/Ip.php';
 
 /**
  * COMPOSER
