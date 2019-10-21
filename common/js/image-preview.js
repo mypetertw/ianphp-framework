@@ -1,6 +1,6 @@
-/*
-| NOTE: UPLOAD IMAGE AND DISPLAY PREVIEW TO IMG TAG
-*/
+/**
+ * UPLOAD IMAGE AND DISPLAY PREVIEW TO IMG TAG
+ */
 $('input[type=file]').change(function(event) {
     if (!this.files || !this.files[0]) {
         return;

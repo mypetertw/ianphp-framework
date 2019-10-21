@@ -2,7 +2,7 @@
 /**
  * DEFAULT HELPER
  *
- * @see /common/classes/Helper
+ * @see /common/helpers/Helper
  */
 $LAZYLOAD = new Image\LazyLoad;
 $FORMAT = new Helper\Format;

@@ -4,7 +4,7 @@
         <? if ($Admin['setting'] === 1) { ?>
             <a class="container-btn progress-bar-btn ease-in-out" href="/admin/setting/index">設定</a>
             <? if (preg_match("/setting/i", ROUTER) === 1) { ?>
-                <a href="/admin/setting/index" class="left-side-content-link-sec <? $MATCH = [ 'index', 'mail', ]; foreach ($MATCH as $key) { echo ROUTER_SELF == $key ? 'active' : ''; } ?> ease-in-out progress-bar-btn relative">一般</a>
+                <a href="/admin/setting/index" class="left-side-content-link-sec <? $MATCH = [ 'index', 'mail', ]; foreach ($MATCH as $key) echo ROUTER_SELF == $key ? 'active' : ''; ?> ease-in-out progress-bar-btn relative">一般</a>
                 <a href="/admin/setting/icon" class="left-side-content-link-sec <?=ROUTER_SELF == 'icon' ? 'active' : '';?> ease-in-out progress-bar-btn relative">圖標</a>
                 <a href="/admin/setting/contact" class="left-side-content-link-sec <?=ROUTER_SELF == 'contact' ? 'active' : '';?> ease-in-out progress-bar-btn relative">聯絡資訊</a>
             <? } ?>

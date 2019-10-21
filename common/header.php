@@ -5,22 +5,12 @@ require_once ROOT . '/common/frontend.php';
 /**
  * CHECK TABLE EXIST
  */
-if ($DATABASE_ENABLE && !TABLE_EXIST('user')) {
-    exit ('SOMETHING WENT WRONG: USER TABLE NOT EXIST.');
-}
-
-if ($DATABASE_ENABLE && !TABLE_EXIST('setting')) {
-    exit ('SOMETHING WENT WRONG: SETTING TABLE NOT EXIST.');
-}
-
-if ($DATABASE_ENABLE && !TABLE_EXIST('permission')) {
-    exit ('SOMETHING WENT WRONG: PERMISSION TABLE NOT EXIST.');
-}
+require_once ROOT . '/common/providers/TableExist.php';
 
 /**
- * CHECK LOCAL CONFIG EXIST
+ * CHECK /env.json EXIST
  */
-require_once ROOT . '/common/configurations/env/exist.php';
+require_once ROOT . '/common/env/exist.php';
 
 /**
  * HTML TAG

@@ -1,6 +1,6 @@
 <?
 /**
- * CUSTOM JS
+ * YOUR CUSTOM JS HERE
  */
 $CUSTOM_JS = [
     'common/js/jquery-3.4.1.min.js',

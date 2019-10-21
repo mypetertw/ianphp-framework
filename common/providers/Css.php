@@ -1,6 +1,6 @@
 <?
 /**
- * CUSTOM CSS
+ * YOUR CUSTOM CSS HERE
  */
 $CUSTOM_CSS = [
     'vendor/swiper-4.5.0/dist/css/swiper.css',

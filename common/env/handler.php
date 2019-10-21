@@ -2,7 +2,7 @@
 /**
  * CREATE env.json
  */
-require_once __DIR__ . '/../../../root.php';
+require_once __DIR__ . '/../../root.php';
 
 $CREATE = fopen(ROOT . '/env.json', 'w');
 $JSON = [
@@ -18,6 +18,6 @@ fwrite($CREATE, json_encode($JSON));
 fclose($CREATE);
 
 $LOCAL_CONFIG = json_decode(file_get_contents(ROOT . '/env.json'), true);
-require_once ROOT . '/common/configurations/env/setup.php';
+require_once ROOT . '/common/env/setup.php';
 
 header('location: /');

@@ -6,7 +6,7 @@ function GET_TITLE($URL) {
 
 function GET_META($URL, $TYPE) {
 
-    require_once __DIR__ . '/metadata.php';
+    require_once __DIR__ . '/EditorIterator.php';
 
     if (sizeof(MetaData::fetch($URL)) === 0) {
         return false;

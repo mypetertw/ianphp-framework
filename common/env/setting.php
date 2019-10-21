@@ -2,7 +2,7 @@
 /**
  * SETTING env.json VALUES
  */
-require_once __DIR__ . '/../../../root.php';
+require_once __DIR__ . '/../../root.php';
 
 if (file_exists(ROOT . '/env.json')) {
     exit (header('location: /'));
@@ -38,7 +38,7 @@ button {
 </style>
 
 <div style="margin: 50px auto; width: 350px; text-align: left;">
-    <form action="/common/configurations/env/handler" method="post">
+    <form action="/common/env/handler" method="post">
         資料庫 IP
         <input name="DB_HOST" placeholder="資料庫 IP" value="172.104.102.244"><br>
         資料庫帳號
