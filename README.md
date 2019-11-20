@@ -1,5 +1,5 @@
 ### IANPHP Framework
-Version: 1.36 (PHP ^7.3.8)
+Version: 1.38 (PHP ^7.3.8)
 ### Author
 Ian at BIC Team in Taipei
 ### Email

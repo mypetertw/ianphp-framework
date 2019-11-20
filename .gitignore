@@ -4,6 +4,7 @@
 #local-config.json
 pull.php
 pullc.php
+env.json
 
 # CUSTOM BELOW
 

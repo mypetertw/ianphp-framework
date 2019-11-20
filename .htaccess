@@ -6,20 +6,38 @@
 
     RewriteEngine on
 
-    # BASIC
-    RewriteRule ^$ public/templates/index.php
+    # php.ini
+    php_value short_open_tag 1
+    php_value upload_max_filesize 5000M
+    php_value post_max_size = 50000M
+    php_value memory_limit = 512M
+
+    # /admin/
     RewriteRule ^admin/$ admin/templates/index.php
-    RewriteRule ^common/env/([\w\-]+)$ common/env/$1.php [L]
+    # /admin/*
     RewriteRule ^admin/([\w\-]+)$ admin/templates/$1.php [L]
-    RewriteRule ^([\w\-]+)$ public/templates/$1.php [L]
-    RewriteRule ^handlers/([\w\-]+)$ public/handlers/$1.php [L]
-    RewriteRule ^admin/search/([^/]+)$ admin/templates/search/index.php?search_query=$1
-    RewriteRule ^admin/handlers/([\w\-]+)$ admin/handlers/$1.php [L]
-    RewriteRule ^common/handlers/([\w\-]+)$ common/handlers/$1.php [L]
-    RewriteRule ^admin/([\w\-]+)$ admin/$1.php [L]
-    RewriteRule ^([\w\-]+)/([\w\-]+)$ public/templates/$1/$2.php [L]
+    # /admin/*/*
     RewriteRule ^admin/([\w\-]+)/([\w\-]+)$ admin/templates/$1/$2.php [L]
+    # /admin/search/*
+    RewriteRule ^admin/search/([^/]+)$ admin/templates/search/index.php?search_query=$1
+    # /admin/handlers/*
+    RewriteRule ^admin/handlers/([\w\-]+)$ admin/handlers/$1.php [L]
+
+    # /
+    RewriteRule ^$ public/templates/index.php
+    # /*
+    RewriteRule ^([\w\-]+)$ public/templates/$1.php [L]
+    # /*/*
+    RewriteRule ^([\w\-]+)/([\w\-]+)$ public/templates/$1/$2.php [L]
+    # /handlers/*
+    RewriteRule ^handlers/([\w\-]+)$ public/handlers/$1.php [L]
+    
+    # /common/env/*
+    RewriteRule ^common/env/([\w\-]+)$ common/env/$1.php [L]
+    # /common/handlers/*
+    RewriteRule ^common/handlers/([\w\-]+)$ common/handlers/$1.php [L]
 
     # CUSTOM BELOW
+    # start here
 
 </IfModule>
