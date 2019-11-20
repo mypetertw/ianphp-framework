@@ -1,20 +1,20 @@
-### IANPHP Framework
+## IANPHP Framework
 Version: 1.38 (PHP ^7.3.8)
 ### Author
-Ian at BIC Team in Taipei
+Ian Wu
 ### Email
 mypetertw@gmail.com
----
-# Getting Started
+
+## Getting Started
 
 ### index.php
-Your index is in /templates/index.php
+Your index is in /public/templates/index.php
 
 ### env.json Config
-DB_HOST: Your database host IP.
-DB_USERNAME: Your database username.
-DB_PASSWORD: Your database password.
-DB_NAME: Your database name.
+DB_HOST: Your database host IP
+DB_USERNAME: Your database username
+DB_PASSWORD: Your database password
+DB_NAME: Your database name
 DEV_HOST: Your dev host domain. (Example: 127.0.0.1)
 PROD_HOST: Your production host domain. (Example: www.google.com)
-SLACK_WEBHOOK: Dont remove the value.
+SLACK_WEBHOOK: Dont remove the value
