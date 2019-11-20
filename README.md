@@ -1,18 +1,18 @@
 ## IANPHP Framework
-Version: 1.38 (PHP ^7.3.8)<br>
+Version: 1.38<br>
+## Environment
+PHP： 7.3.8^<br>
 Apache: 2.4.29^<br>
-MariaDB: 10.4.10^
+MariaDB: 10.4.10^<br>
+Linux Ubuntu 18.04 LTS^ (recommend)
 ### Author
-Ian Wu
+Ian from Taipei
 ### Email
 mypetertw@gmail.com
-
 ## Getting Started
-
 ### index.php
 Your index is in /public/templates/index.php
-
-### env.json Config
+### "env.json" Config
 DB_HOST: Your database host IP<br>
 DB_USERNAME: Your database username<br>
 DB_PASSWORD: Your database password<br>
