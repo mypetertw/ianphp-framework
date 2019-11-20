@@ -2,7 +2,7 @@
 Version: 1.38<br>
 Updated: 21/11/19
 ## Environment
-PHP： 7.3.8^<br>
+PHP: 7.3.8^<br>
 Apache: 2.4.29^<br>
 MariaDB: 10.4.10^<br>
 Linux Ubuntu 18.04 LTS^ (recommend)
@@ -21,3 +21,5 @@ DB_NAME: Your database name<br>
 DEV_HOST: Your dev host domain. (Example: 127.0.0.1)<br>
 PROD_HOST: Your production host domain. (Example: www.google.com)<br>
 SLACK_WEBHOOK: Dont remove the value
+## License
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
